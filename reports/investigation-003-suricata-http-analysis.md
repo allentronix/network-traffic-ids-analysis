@@ -2,7 +2,7 @@
 
 ## Objective
 
-Analyze a previously captured HTTP PCAP using Suricata IDS, identify extracted protocol metadata, and correlate findings with manual Wireshark analysis.
+I used Suricata to analyze a captured HTTP PCAP and compared its results with what I saw in Wireshark during Investigation 001.
 
 ## Tools
 
@@ -21,15 +21,15 @@ Analyze a previously captured HTTP PCAP using Suricata IDS, identify extracted p
 
 ## Findings
 
-### HTTP Transaction
+### HTTP transaction
 
-Suricata identified the following HTTP transaction:
+Suricata found this HTTP request and response in the capture:
 
 - Source IP: `145.254.160.237`
 - Source port: `3372`
 - Destination IP: `65.208.228.223`
 - Destination port: `80`
-- HTTP method: `GET`
+- Method: `GET`
 - Host: `www.ethereal.com`
 - URI: `/download.html`
 - HTTP version: `HTTP/1.1`
@@ -37,25 +37,21 @@ Suricata identified the following HTTP transaction:
 - Content type: `text/html`
 - Response content length: `18070` bytes
 
-### Wireshark Correlation
+### Comparing with Wireshark
 
-The HTTP transaction metadata extracted by Suricata matched the corresponding request and response observed during Investigation 001 in Wireshark.
+I compared Suricata's HTTP metadata with the request and response I examined in Wireshark for Investigation 001. The endpoints and HTTP details matched.
 
-### Detection Results
+### Detection results
 
-Suricata processed 43 packets and generated protocol metadata events, including HTTP, DNS, flow, and file information events.
-
-No signature alerts were recorded in the EVE JSON output or fast.log for this capture.
+Suricata processed 43 packets and recorded metadata events for protocols and activity such as HTTP, DNS, flows, and files. It did not record any signature alerts in the EVE JSON output or `fast.log` for this capture.
 
 ## Conclusion
 
-Suricata successfully analyzed the offline PCAP and extracted HTTP transaction metadata. Correlation with Wireshark confirmed the identified endpoints, HTTP request, and response.
+I was able to use Suricata to extract the HTTP transaction details from the offline capture, then confirm them against Wireshark. Suricata did not report an alert. That only means none of the loaded signatures matched this traffic; it does not prove the traffic is safe.
 
-The absence of signature alerts indicates that no loaded detection signature matched this traffic. It does not independently establish that the traffic is safe.
+## What I learned
 
-## Lessons Learned
-
-- Suricata can extract application-layer metadata automatically.
-- EVE JSON provides structured data suitable for investigation and automation.
-- Wireshark and Suricata complement each other in network investigations.
-- Absence of alerts is not proof of benign activity.
+- Suricata can pull useful application-layer details from a packet capture.
+- EVE JSON makes those details easier to search and work with using tools such as `jq`.
+- Comparing Suricata's output with Wireshark helped me check that I was interpreting the transaction correctly.
+- No alert by itself is not proof that traffic is benign.

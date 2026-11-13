@@ -47,3 +47,13 @@ All the traffic here comes from public sample pcaps or my own isolated lab. I'm 
 ## Status
 
 Just getting started, still setting up the lab.
+
+## http.cap
+
+- **Source:** [Wireshark Sample Captures](https://wiki.wireshark.org/SampleCaptures)
+- **Download:** https://wiki.wireshark.org/uploads/27707187aeb30df68e70c8fb9d614981/http.cap
+- **Format:** PCAP 2.4
+- **Link type:** Ethernet
+- **Size:** 25,803 bytes
+- **Purpose:** Analyse HTTP requests and responses in a sample network capture.
+- **Verification:** Confirmed as a valid PCAP using the `file` command.
