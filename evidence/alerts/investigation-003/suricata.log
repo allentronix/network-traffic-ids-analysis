@@ -1,0 +1,34 @@
+[259 - Suricata-Main] 2026-11-13 02:45:48 Notice: suricata: This is Suricata version 8.0.8 RELEASE running in USER mode
+[259 - Suricata-Main] 2026-11-13 02:45:48 Info: cpu: CPUs/cores online: 11
+[259 - Suricata-Main] 2026-11-13 02:45:48 Info: suricata: Setting engine mode to IDS mode by default
+[259 - Suricata-Main] 2026-11-13 02:45:48 Info: exception-policy: master exception-policy set to: auto
+[259 - Suricata-Main] 2026-11-13 02:45:48 Info: logopenfile: fast output device (regular) initialized: fast.log
+[259 - Suricata-Main] 2026-11-13 02:45:48 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[259 - Suricata-Main] 2026-11-13 02:45:48 Info: logopenfile: stats output device (regular) initialized: stats.log
+[259 - Suricata-Main] 2026-11-13 02:45:49 Info: detect: 1 rule files processed. 53292 rules successfully loaded, 0 rules failed, 0 rules skipped
+[259 - Suricata-Main] 2026-11-13 02:45:49 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[259 - Suricata-Main] 2026-11-13 02:45:49 Info: detect: 53297 signatures processed. 1220 are IP-only rules, 4530 are inspecting packet payload, 47310 inspect application layer, 111 are decoder event only
+[3075 - RX#01] 2026-11-13 02:45:52 Info: pcap: Starting file run for pcaps/http.cap
+[259 - Suricata-Main] 2026-11-13 02:45:52 Notice: threads: Threads created -> RX: 1 W: 11 FM: 1 FR: 1   Engine started.
+[3075 - RX#01] 2026-11-13 02:45:52 Info: pcap: pcap file pcaps/http.cap end of file reached (pcap err code 0)
+[259 - Suricata-Main] 2026-11-13 02:45:52 Notice: suricata: Signal Received.  Stopping engine.
+[259 - Suricata-Main] 2026-11-13 02:45:52 Info: suricata: time elapsed 0.062s
+[3075 - RX#01] 2026-11-13 02:45:52 Notice: pcap: read 1 file, 43 packets, 25091 bytes
+[259 - Suricata-Main] 2026-11-13 02:45:52 Info: counters: Alerts: 0
+[259 - Suricata-Main] 2026-11-13 02:56:01 Notice: suricata: This is Suricata version 8.0.8 RELEASE running in USER mode
+[259 - Suricata-Main] 2026-11-13 02:56:01 Info: cpu: CPUs/cores online: 11
+[259 - Suricata-Main] 2026-11-13 02:56:01 Info: suricata: Setting engine mode to IDS mode by default
+[259 - Suricata-Main] 2026-11-13 02:56:01 Info: exception-policy: master exception-policy set to: auto
+[259 - Suricata-Main] 2026-11-13 02:56:01 Info: logopenfile: fast output device (regular) initialized: fast.log
+[259 - Suricata-Main] 2026-11-13 02:56:01 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[259 - Suricata-Main] 2026-11-13 02:56:01 Info: logopenfile: stats output device (regular) initialized: stats.log
+[259 - Suricata-Main] 2026-11-13 02:56:02 Info: detect: 1 rule files processed. 53292 rules successfully loaded, 0 rules failed, 0 rules skipped
+[259 - Suricata-Main] 2026-11-13 02:56:02 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[259 - Suricata-Main] 2026-11-13 02:56:02 Info: detect: 53297 signatures processed. 1220 are IP-only rules, 4530 are inspecting packet payload, 47310 inspect application layer, 111 are decoder event only
+[6915 - RX#01] 2026-11-13 02:56:05 Info: pcap: Starting file run for pcaps/http.cap
+[259 - Suricata-Main] 2026-11-13 02:56:05 Notice: threads: Threads created -> RX: 1 W: 11 FM: 1 FR: 1   Engine started.
+[6915 - RX#01] 2026-11-13 02:56:05 Info: pcap: pcap file pcaps/http.cap end of file reached (pcap err code 0)
+[259 - Suricata-Main] 2026-11-13 02:56:05 Notice: suricata: Signal Received.  Stopping engine.
+[259 - Suricata-Main] 2026-11-13 02:56:05 Info: suricata: time elapsed 0.060s
+[6915 - RX#01] 2026-11-13 02:56:05 Notice: pcap: read 1 file, 43 packets, 25091 bytes
+[259 - Suricata-Main] 2026-11-13 02:56:05 Info: counters: Alerts: 0
